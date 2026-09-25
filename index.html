@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        main {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a simple HTML template containing basic structure, basic CSS styling, and JavaScript interactivity.</p>
+
+        <h3>Features:</h3>
+        <ul>
+            <li>Clean and semantic HTML5 structure</li>
+            <li>Embedded CSS for styling</li>
+            <li>Basic JavaScript click handler</li>
+        </ul>
+
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="output-message" style="color: green; margin-top: 10px;"></p>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("output-message").innerText = "Hello! You clicked the button.";
+        }
+    </script>
+
+</body>
+</html>
